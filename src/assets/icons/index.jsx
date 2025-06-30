@@ -12,11 +12,14 @@ import Pattern8 from "../icons/MainPage/Pattern 8.svg"
 import PatternCard1 from "../icons/MainPage/Pattern card 1.svg"
 import PatternCard2 from "../icons/MainPage/Pattern card 2.svg"
 import PatternCard3 from "../icons/MainPage/Pattern card 3.svg"
-import GoogleLogo from "../icons/Login/google.svg"
 import Group41 from "..//icons/MainPage/Group 41.svg"
 import Group52 from "..//icons/MainPage/Group 52.svg"
 import Group53 from "..//icons/MainPage/Group 53.svg"
 import Group56 from "..//icons/MainPage/Group 56.svg"
+import Group78 from "../icons/MainPage/Group 78.svg"
+import Union from "../icons/MainPage/Union.svg"
+import Vector from "../icons/MainPage/Vector.svg"
+import Group8 from "../icons/MainPage/Group 8.svg"
 
 import Home from "../icons/SideBar/Home.svg"
 import Learning from "../icons/SideBar/Learning.svg"
@@ -27,6 +30,8 @@ import LogOut from "../icons/SideBar/LogOut.svg"
 import ArrowRight from "../icons/SideBar/ArrowRight.svg"
 import ArrowLeft from "../icons/SideBar/ArrowLeft.svg"
 
+
+import GoogleLogo from "../icons/Login/google.svg"
 
 
 
@@ -39,6 +44,8 @@ export {
     Pattern1, Pattern2, Pattern3, Pattern4, Pattern5, Pattern6, Pattern7, Pattern8,
     PatternCard1, PatternCard2, PatternCard3,
     Group41, Group52, Group53, Group56,
+    Group78,
+    Union, Vector, Group8, 
     // Login page
     GoogleLogo,
 

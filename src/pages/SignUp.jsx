@@ -3,47 +3,6 @@ import { Link } from "react-router-dom";
 import AccountPageInput from "../components/AccountPageInput"
 import MainPageLogo from "../assets/Logo.svg"
 import { GoogleLogo } from "../assets/icons/index";
-// import { supabase } from '../supabaseClient'
-
-// const handleSignUp = async (e) => {
-//   e.preventDefault()
-
-//   const email = e.target.email.value
-//   const password = e.target.password.value
-//   const confirmPassword = e.target.confirmPassword.value
-
-//   if (password !== confirmPassword) {
-//     alert("Mật khẩu nhập lại không khớp!")
-//     return
-//   }
-
-//   const { data, error } = await supabase.auth.signUp({
-//     email,
-//     password,
-//   })
-
-//   if (error) {
-//     alert("Lỗi đăng ký: " + error.message)
-//     console.error(error)
-//   } else {
-//     alert("Đăng ký thành công! Hãy kiểm tra email để xác nhận.")
-//     console.log(data)
-//   }
-// }
-
-// const handleGoogleSignUp = async () => {
-//   const { data, error } = await supabase.auth.signInWithOAuth({
-//     provider: "google",
-//     options: {
-//       redirectTo: "http://localhost:5173", // thay bằng domain của bạn khi deploy
-//     },
-//   });
-
-//   if (error) {
-//     alert("Lỗi Google sign-in: " + error.message);
-//     console.error(error);
-//   }
-// };
 
 import authService from "../services/authService";
 
@@ -83,7 +42,7 @@ export default function SignUp() {
                 <div className="signup-container">
 
                     <div className="signup-signup-container">
-                        <Link to="/login" className="signup-signup-button">Sign in</Link>
+                        <Link to="/signin" className="signup-signup-button">Sign in</Link>
                         <Link to="" className="signup-signup-button">Sign up</Link>
                     </div>
 

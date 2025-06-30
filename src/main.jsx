@@ -5,7 +5,7 @@ import App from "./App";
 import CreateList from "./pages/CreateList";
 import HomePage from "./pages/HomePage";
 import MainPage from "./pages/MainPage";
-import Login from "./pages/Login";
+import Signin from "./pages/Signin";
 import SignUp from "./pages/SignUp";
 import ResetPassword from './pages/ResetPassword'; // reset password page
 import ForgotPassword from './pages/ForgotPassword'; // forgot password page
@@ -14,25 +14,23 @@ import "./scss/main.scss";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainPage/>,
-    children: [
-      {
-        path: "homepage",
-        element: <HomePage />,
-      },
-      {
-        path: "createlist",
-        element: <CreateList />,
-      },
-      {
-        path: "mainpage",
-        element: <MainPage />
-      },
-    ]
+    element: <MainPage />,
   },
   {
-    path: "login",
-    element: <Login />,
+    path: "homepage",
+    element: <HomePage />,
+  },
+  {
+    path: "createlist",
+    element: <CreateList />,
+  },
+  {
+    path: "mainpage",
+    element: <MainPage />
+  },
+  {
+    path: "signin",
+    element: <Signin />,
   },
   {
     path: "signup",

@@ -1,10 +1,7 @@
-import "../index.css"; // Đảm bảo file SCSS đã được biên dịch thành index.css
-import MainPageLogo from "../assets/Logo.svg";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../assets/icons/index"
-import DropdownMenu from "./DropdownMenu"
 import { DropdownArrow } from "../assets/icons/index";
+import DropdownMenu from "./DropdownMenu";
 
 const NavBar = () => {
 
@@ -25,11 +22,6 @@ const NavBar = () => {
 
     return (
         <nav className="navbar">
-            <Link to="/" className="navbar__site-title">
-                <img src={MainPageLogo} alt="Vocaboost Logo" className="navbar__logo" />
-            </Link>
-
-
             {/* <form className="navbar__search" onSubmit={handleSearchSubmit}>
                 <img src={Search} style={{width: '20px', height: '20px'}}/>
                 <input
@@ -40,29 +32,18 @@ const NavBar = () => {
                     onChange={handleSearchChange}
                 />
             </form> */}
-
-
-            <ul className="navbar__list">
-                <div className = "navbar__link-group">
-                    <Link to="homepage" className="navbar__item">Contact</Link>
-                    <img src={DropdownArrow} alt="drop down arrow"/>
-                </div>
-                <div className = "navbar__link-group">
-                    <Link to="mainpage" className="navbar__item">Support</Link>
-                    <img src={DropdownArrow} alt="drop down arrow"/>
-                </div>
-                <div className = "navbar__link-group">
-                    <Link to="createlist" className="navbar__item">Pricing</Link>
-                    <img src={DropdownArrow} alt="drop down arrow"/>
-
-                </div>
-            </ul>
-            
-            <div className="navbar__login-signup">
-                <Link to="login" className="login">Log in</Link>
-                <Link to="signup" className="signup">Sign up</Link>
+            <div className="navbar__contact">
+                <Link to="/homepage" className="navbar__item">Contact</Link>
+                <img src={DropdownArrow} alt="drop down arrow" />
             </div>
-
+            <div className="navbar__support">
+                <Link to="/homepage" className="navbar__item">Support</Link>
+                <img src={DropdownArrow} alt="drop down arrow" />
+            </div>
+            <div className="navbar__pricing">
+                <Link to="/createlist" className="navbar__item">Pricing</Link>
+                <img src={DropdownArrow} alt="drop down arrow" />
+            </div>
         </nav>
     );
 };

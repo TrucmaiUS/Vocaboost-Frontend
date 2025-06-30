@@ -3,41 +3,9 @@ import { Link } from "react-router-dom";
 import AccountPageInput from "../components/AccountPageInput"
 import MainPageLogo from "../assets/Logo.svg"
 import { GoogleLogo } from "../assets/icons/index";
-// import { supabase } from '../supabaseClient'
 import { useNavigate } from 'react-router-dom' // Import useNavigate for navigation
 import authService from "../services/authService";
 
-// const handleGoogleLogin = async () => {
-//   const { data, error } = await supabase.auth.signInWithOAuth({
-//     provider: 'google',
-//   });
-//   if (error) console.error(error);
-// };
-
-// export default function Login() {
-    
-//     const navigate = useNavigate()
-
-//     const handleLogin = async (e) => {
-//     e.preventDefault()
-
-//     const email = e.target.email.value
-//     const password = e.target.password.value
-
-//     const { data, error } = await supabase.auth.signInWithPassword({
-//         email,
-//         password,
-//     })
-
-//     if (error) {
-//         alert("Sai email hoặc mật khẩu!")
-//         console.error(error)
-//     } else {
-//         alert("Đăng nhập thành công!")
-//         console.log(data)
-//         navigate("/homepage")
-//     }
-//     }
 
 const handleGoogleLogin = () => {
   window.location.href = "http://localhost:3000/api/auth/google";
